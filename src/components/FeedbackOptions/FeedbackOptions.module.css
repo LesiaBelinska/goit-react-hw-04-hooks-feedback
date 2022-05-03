@@ -1,0 +1,16 @@
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    font-size: 24px;
+    font-weight: 700;
+    background-color: orange;
+    color: rgb(52, 51, 51);
+    padding: 5px;
+    min-width: 150px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 7px -1px #000;
+}

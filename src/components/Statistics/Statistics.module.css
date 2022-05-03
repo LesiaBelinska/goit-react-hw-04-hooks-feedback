@@ -1,0 +1,13 @@
+.list {
+    font-size: 26px;
+}
+
+.grade {
+    font-weight: 700;
+    color: orange;
+}
+
+.message {
+    font-size: 26px;
+    font-weight: 700;
+}
