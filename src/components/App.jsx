@@ -5,13 +5,14 @@ import FeedbackOptions from "./FeedbackOptions/FeedbackOptions.jsx";
 import Statistics from "./Statistics/Statistics.jsx";
 
 import s from "./App.module.css";
+
 const App =()=> {
 
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const handleChange = ({target}) => {
+  const handleFeedback = ({ target }) => {
     const { feedback } = target.dataset;
 
     switch (feedback) {
@@ -31,7 +32,7 @@ const App =()=> {
         console.warn("error");
     }
     
-  }
+  };
   
   const countTotalFeedback = () => {
     return good + bad + neutral;
@@ -48,7 +49,7 @@ const App =()=> {
           title='Please leave feedback'>
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
-            onLeaveFeedback={handleChange}/>
+            onLeaveFeedback={handleFeedback}/>
         </Section>
         <Section>
           <Statistics
